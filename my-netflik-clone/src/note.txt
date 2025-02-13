@@ -1,0 +1,8 @@
+1)git clone https://github.com/nebuzerom-hab/Netflix-Clone-2025.git
+2)check if .git is exist by ls-al 
+3)create react app 
+npm create vite@latest my-react-app  
+4)clean up unwented js
+5)npm run dev to check if it is working
+6)change git flow because the new files are untracked
+7)git add .
