@@ -5,4 +5,8 @@ npm create vite@latest my-react-app
 4)clean up unwented js
 5)npm run dev to check if it is working
 6)change git flow because the new files are untracked
-7)git add .
+7)git add . then it will change to A(added)
+8)git push -u origin main
+The -u flag (or --set-upstream) is used to establish a tracking relationship between your local branch and the remote branch.
+
+It means that after you run this command once, you don’t need to specify the remote and branch every time you run git push in the future. Git will automatically push to origin/main when you use git push in the future.
