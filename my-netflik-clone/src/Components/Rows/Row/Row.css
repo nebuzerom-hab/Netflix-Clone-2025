@@ -11,6 +11,9 @@
     overflow-y: hidden;
     overflow-x:scroll;
     padding: 20px;
+    
+    
+    
 }
 .row_posters::-webkit-scrollbar{
     display: none;
@@ -21,7 +24,9 @@
 
 }
 .row_posterLarge{
-    max-height: 400px;
+    max-height: 250px;
+     
+    
 }
 .row_posterLarge:hover{
     transform: scale(1.09);
@@ -29,4 +34,5 @@
 .row{
     margin-left: 20px;
     color:white;
+    
 }
