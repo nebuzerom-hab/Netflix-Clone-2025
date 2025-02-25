@@ -1,0 +1,54 @@
+.pin {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.title {
+  font-size: 19px;
+}
+.subTitle {
+  font-size: 40px;
+}
+
+.pinBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.pinBox input {
+  width: 90px;
+  height: 90px;
+  background-color: black;
+  border: 2px solid white;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  caret-color: white;
+  font-size: 30px;
+  line-height: 90px;
+  padding: 0;
+  outline: none;
+}
+.pinBox input:focus {
+  transform: scale(1.2);
+  line-height: 60px;
+  
+  
+  padding: 0;
+  caret-width: 3px;
+}
+
+input:focus {
+  caret-color: white;
+  line-height: 60px;
+  padding: 0;
+}
+
+input {
+  font-family: monospace;
+}
+.pinBox:focus{
+    gap: 55px;
+}

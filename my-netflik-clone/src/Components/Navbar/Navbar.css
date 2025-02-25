@@ -77,3 +77,60 @@
     visibility: visible;
 }
 
+@media (max-width: 768px) {
+  .navbar ul {
+    display: block;  /* Make the list vertical */
+    text-align: center;  /* Center the links */
+  }
+
+  .navbar ul li {
+    margin: 10px 0;  /* Space between links */
+  }
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+
+  .navbar{
+    display: flex;
+    gap: 10px;
+    height: 50%;
+  }
+
+    .nav-links {
+        display: none; /* Initially hide the menu */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color:black;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links ul {
+        display: inline-block;
+        
+      
+        
+    }
+
+    .nav-links ul li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Show the toggle button */
+    }
+
+    /* Show menu when active */
+    .nav-links.active {
+        display: block;
+    }
+}

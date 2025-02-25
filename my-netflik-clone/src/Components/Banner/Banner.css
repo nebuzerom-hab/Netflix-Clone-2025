@@ -29,7 +29,44 @@
     height: 80px;
    }
    
-   .banner_button{
+   .banner_buttons{
+
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+   }
+   .banner_buttons .btn img{
+    width: 25px;
+
+   }
+   .banner_buttons .btn{
+    border:0;/* Removes  default borders  */
+    outline:0;
+    padding:8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap:10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ .banner_buttons .btn.info-btn{
+ 
+    color: white;
+    background-color: #6b6b6b;
+
+ }
+
+ .banner_buttons .btn:hover{
+    background-color:#ffffffbf ;
+}
+.banner_buttons .btn.info-btn:hover{
+    background:#6d6d6e66 ;
+
+}
+   /* .banner_button{
     cursor: pointer;
     color: white;
     outline: none;
@@ -40,12 +77,16 @@
     padding: 1rem 3rem;
     margin-right: 2rem;
     background-color: rgb(51, 51, 51,0.5);
-
-
    }
+    
+
+
+   
    .play{
     color: black;
     background-color: white;
+
+    
    }
    .banner_button:hover{
     color: black;
@@ -58,3 +99,12 @@
     background-image: linear-gradient(180deg,transparent,rgb(37,37,0.91));
 
    }
+   .play_btn{
+      width: 20px;
+      
+}
+.info{
+    width: 40px;
+    padding-right: 4px;
+
+} */

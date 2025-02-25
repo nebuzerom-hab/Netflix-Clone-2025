@@ -1,0 +1,21 @@
+.trailer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.close-trailer {
+  
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 23px;
+}

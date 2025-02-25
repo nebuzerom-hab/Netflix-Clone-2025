@@ -1,0 +1,52 @@
+Example:
+Given URL:
+const url = "https://www.youtube.com/watch?v=YoHD9XEInc0&t=30s";
+Step 1: Create a URL Object
+j
+const urlObj = new URL(url);
+console.log(urlObj);
+Output (URL Object):
+
+URL {
+  href: "https://www.youtube.com/watch?v=YoHD9XEInc0&t=30s",
+  origin: "https://www.youtube.com",
+  pathname: "/watch",
+  search: "?v=YoHD9XEInc0&t=30s"
+}
+.search returns "?v=YoHD9XEInc0&t=30s" (query string).
+Step 2: Create URLSearchParams Object
+
+const urlParams = new URLSearchParams(urlObj.search);
+console.log(urlParams);
+Output (URLSearchParams Object):
+
+
+URLSearchParams { 'v' => 'YoHD9XEInc0', 't' => '30s' }
+This means:
+
+"v" parameter has the value "YoHD9XEInc0" (video ID).
+"t" parameter has the value "30s" (start time).
+Step 3: Extract Specific Parameters
+js
+
+console.log(urlParams.get("v")); // "YoHD9XEInc0"
+console.log(urlParams.get("t")); // "30s"
+.get("v") → Gets the YouTube video ID.
+.get("t") → Gets the start time.
+Final Answer
+✅ Yes, new URLSearchParams(new URL(url).search); creates an object that makes it easy to extract
+Main Benefits of react-youtube
+Embed YouTube Video
+Instead of just providing a link, you can embed the video player directly into your React component and allow users to watch the trailer within the app.
+
+Control the Player
+react-youtube allows you to pass in options like:
+
+Autoplay the video
+Hide or show controls
+Set the video to play on mute
+Handle YouTube Events
+You can listen for events such as:
+
+onPlay, onPause, onEnd
+Capture when the user interacts with the video.
