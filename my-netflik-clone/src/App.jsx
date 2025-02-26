@@ -20,7 +20,7 @@ return (
       <Route path="/Netflix-Clone-2025" element={<WhoIsWatching />} />
       {/* <Route path="/" element={<WhoIsWatching />} /> */}
       <Route path="/Login/:user" element={<Login />} />
-      <Route path="/Home" element={<Home />} />
+      <Route path="/Netflix-Clone-2025/Home" element={<Home />} />
       <Route path="/Trail/:movieId" element={<Trail />} />
     </Routes>
   </Router>
