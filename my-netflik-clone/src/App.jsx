@@ -17,7 +17,8 @@ function App() {
 return (
   <Router>
     <Routes>
-      <Route path="/" element={<WhoIsWatching />} />
+      <Route path="/Netflix-Clone-2025" element={<WhoIsWatching />} />
+      {/* <Route path="/" element={<WhoIsWatching />} /> */}
       <Route path="/Login/:user" element={<Login />} />
       <Route path="/Home" element={<Home />} />
       <Route path="/Trail/:movieId" element={<Trail />} />
