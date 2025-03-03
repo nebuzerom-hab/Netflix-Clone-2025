@@ -15,12 +15,12 @@ import Login from "./Components/Pages/Login/Login";
 function App() {
   
 return (
-  <Router>
+  <Router basename="/Netflix-Clone-2025">
     <Routes>
-      <Route path="/Netflix-Clone-2025" element={<WhoIsWatching />} />
+      <Route path="/" element={<WhoIsWatching />} />
       {/* <Route path="/" element={<WhoIsWatching />} /> */}
       <Route path="/Login/:user" element={<Login />} />
-      <Route path="/Netflix-Clone-2025/Home" element={<Home />} />
+      <Route path="/Home" element={<Home />} />
       <Route path="/Trail/:movieId" element={<Trail />} />
     </Routes>
   </Router>

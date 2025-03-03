@@ -46,6 +46,7 @@ const WhoIsWatching = () => {
       </div>
       <div className="manage">
         <p>Manage Profile</p>
+        <p>Nebu 1234</p>
       </div>
       {selectedUser && (
         <div>

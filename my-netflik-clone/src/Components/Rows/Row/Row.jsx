@@ -65,7 +65,7 @@ const Row = ({ title, fetchUrl, isLargerRow }) => {
       autoplay: 1,
       mute: 1,
        // Ensures YouTube API is enabled for interaction
-      origin: window.location.origin,
+      
     },
   };
 
@@ -86,7 +86,7 @@ const Row = ({ title, fetchUrl, isLargerRow }) => {
         ))}
       </div>
       {trailerUrl &&
-      <div style={{ padding: "40px" }}>
+      <div style={{ padding: "15px" }}>
         {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
         <button className="close-trailer" onClick={() => setTrailerUrl("") && setShowTrailer(false)}>
           Close Trailer
